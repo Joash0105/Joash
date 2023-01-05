@@ -1,0 +1,36 @@
+{
+  "name": "doctor-database-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "node build/src/main.js",
+    "build": "tsc -p tsconfig.json",
+    "db:migrate": "node migrations/up.js",
+    "db:seed": "node seeders/up.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "compression": "^1.7.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "lodash": "^4.17.21",
+    "mysql2": "^2.3.3",
+    "reflect-metadata": "^0.1.13",
+    "tslib": "^2.4.1",
+    "tsyringe": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/compression": "^1.7.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.14",
+    "@types/mysql": "^2.15.21",
+    "@types/node": "^18.11.11",
+    "typescript": "^4.9.3"
+  }
+}
